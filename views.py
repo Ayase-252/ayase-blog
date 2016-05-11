@@ -32,7 +32,7 @@ def post(request, postId):
     context = libs.get_common_context(post.title)
     context.update({
         'post': post.get_post(),
-        })
+    })
 
     return render(request, 'post_new.html', context)
 

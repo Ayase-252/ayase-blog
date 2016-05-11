@@ -563,23 +563,23 @@ body a {
   border-left-color: #f0ad4e;
 }
 .post .block-notice-caution h4 {
-  color: #f0ad4e;
+  color: #f0ad4e !important;
 }
 .post .block-notice-danger {
   border-left-color: #d9534f;
 }
 .post .block-notice-danger h4 {
-  color: #d9534f;
+  color: #d9534f !important;
 }
 .post .block-notice-info {
   border-left-color: #5bc0de;
 }
 .post .block-notice-info h4 {
-  color: #5bc0de;
+  color: #5bc0de !important;
 }
 .post .block-notice-success {
   border-left-color: #5cb85c;
 }
 .post .block-notice-success h4 {
-  color: #5cb85c;
+  color: #5cb85c !important;
 }

@@ -25,7 +25,8 @@ class CallOut(models.Model):
     """
     CALLOUT_LEVEL = (('N', 'Common Notice'),
                      ('W', 'Warning'),
-                     ('D', 'Danger'))
+                     ('D', 'Danger'),
+                     ('R', 'Recommend'))
 
     level = models.CharField(max_length=1, choices=CALLOUT_LEVEL)
     title = models.CharField(max_length=60)
@@ -131,7 +132,8 @@ class Post(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     date = models.DateTimeField()
     content = models.TextField()
-    callout = models.ForeignKey(CallOut, on_delete=models.CASCADE, null=True)
+    callout = models.ForeignKey(CallOut, on_delete=models.CASCADE,
+                                null=True, blank=True)
 
     data_api = PostManager()
 
