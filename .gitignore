@@ -2,4 +2,4 @@
 *.pyc
 
 # Ignore all migration files
-*/migrations/*
+migrations/*
