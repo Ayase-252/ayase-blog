@@ -1,0 +1,5 @@
+# Ignore all cache files
+*.pyc
+
+# Ignore all migration files
+*/migrations/*
