@@ -50,7 +50,7 @@ class Category(models.Model):
                     ex. /category/url
     """
     categoryId = models.AutoField(primary_key=True)
-    name = models.CharField('name of category', max_length=10)
+    name = models.CharField('Name', max_length=30)
     url = models.CharField('URL of Linked Page', max_length=80, unique=True)
     data_api = CategoryManager()
 
